@@ -12,3 +12,15 @@ pnpm install
 pnpm dev
 pnpm build
 ```
+
+## Deploy (Cloudflare Pages)
+
+Connect this repo in the Cloudflare dashboard with:
+
+| Setting | Value |
+| --- | --- |
+| Build command | `pnpm build` |
+| Build output directory | `dist` |
+| Node version | read from `.node-version` (24.18.1) |
+
+Custom domain `docs.marginal.app` is set in the Pages project (the `public/CNAME` file only matters for GitHub Pages). `public/_headers` and `public/_redirects` are picked up by Pages automatically.

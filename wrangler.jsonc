@@ -1,0 +1,7 @@
+{
+  // Cloudflare Pages project config. Git integration builds with
+  // `pnpm build` and serves `dist`; this also lets `wrangler pages deploy` work.
+  "name": "marginal-docs",
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2026-09-01"
+}
