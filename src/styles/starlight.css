@@ -1,0 +1,38 @@
+/* Map Marginal tokens onto Starlight's theme variables. */
+:root {
+  --sl-font: var(--font-sans);
+  --sl-font-mono: var(--font-mono);
+  --sl-color-accent-low: #e6e6fa;
+  --sl-color-accent: var(--accent);
+  --sl-color-accent-high: #3d3db8;
+  --sl-color-white: var(--text);
+  --sl-color-gray-1: #2b2b2b;
+  --sl-color-gray-2: #4a4a4a;
+  --sl-color-gray-3: var(--text-secondary);
+  --sl-color-gray-4: #a7a7ab;
+  --sl-color-gray-5: var(--border);
+  --sl-color-gray-6: var(--bg-elevated);
+  --sl-color-gray-7: #fafafa;
+  --sl-color-black: var(--bg);
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #2a2a5a;
+  --sl-color-accent: var(--accent);
+  --sl-color-accent-high: #c4c4ff;
+  --sl-color-white: var(--text);
+  --sl-color-gray-1: #e6e6e8;
+  --sl-color-gray-2: #c4c4c8;
+  --sl-color-gray-3: var(--text-secondary);
+  --sl-color-gray-4: #6b6b70;
+  --sl-color-gray-5: var(--border);
+  --sl-color-gray-6: var(--bg-elevated);
+  --sl-color-gray-7: #17171a;
+  --sl-color-black: var(--bg);
+}
+
+.site-title {
+  font-family: var(--font-serif-latin);
+  font-size: 1.35rem;
+  letter-spacing: -0.3px;
+}
