@@ -2,8 +2,12 @@
 
 Docs and landing page for [Marginal](https://github.com/marginal-app/marginal-app), a self-hosted, local-first web highlighter.
 
-- `/` — landing page (`src/pages/index.astro`)
-- `/getting-started/…`, `/self-host/…`, `/concepts/…` — docs (Starlight, `src/content/docs`)
+- `/` — Korean landing page (`src/pages/index.astro`)
+- `/en/` — English landing page (`src/pages/en/index.astro`)
+- `/getting-started/…`, `/self-host/…`, `/concepts/…` — Korean docs (Starlight)
+- `/en/getting-started/…`, `/en/self-host/…`, `/en/concepts/…` — English docs (Starlight)
+
+Use the language switcher to move between the Korean and English versions of the current page. Add future translations under `src/content/docs/<locale>/` and register the locale in `astro.config.mjs`.
 
 Design source of truth is the Figma file **Marginal-App**. Tokens in `src/styles/tokens.css` and every image in `public/screens/` are exported from it; do not redraw screens here.
 
